@@ -1,6 +1,6 @@
 <?php 
 
-namespace StaffStrength\XssCheck\Http\Middleware;
+namespace Ayolana\LaravelXssCheck\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
