@@ -14,7 +14,7 @@ class LaravelXssCheckServiceProvider extends ServiceProvider
     public function boot()
     {
         $router = $this->app['router'];
-        $router->pushMiddlewareToGroup('xsscheck', \StaffStrength\XssCheck\Http\Middleware\XssCheck::class);
+        $router->pushMiddlewareToGroup('xsscheck', \Ayolana\LaravelXssCheck\Http\Middleware\XssCheck::class);
     }
 
     /**
