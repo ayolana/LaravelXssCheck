@@ -45,7 +45,7 @@
         },
         "laravel": {
             "providers": [
-                "Armony\\LaravelXssCheck\\LaravelXssCheckServiceProvider"
+                "Ayolana\\LaravelXssCheck\\LaravelXssCheckServiceProvider"
             ],
             "aliases": {}
         }
