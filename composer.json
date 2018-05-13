@@ -1,0 +1,56 @@
+{
+    "name": "ayolana/laravel-xss-check",
+    "type": "library",
+    "description": "Laravel XssCheck is a custom middleware that verifies user input",
+    "keywords": [
+        "Ayolana",
+        "LaravelXssCheck"
+    ],
+    "homepage": "https://github.com/ayolana/LaravelXssCheck",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ayolana",
+            "email": "lanaayodele@gmail.com",
+            "homepage": "www.ayolana.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.6|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=5.4.3",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ayolana\\LaravelXssCheck\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ayolana\\LaravelXssCheck\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Armony\\LaravelXssCheck\\LaravelXssCheckServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
